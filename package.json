@@ -10,7 +10,9 @@
     "package": "cd src && npm run package",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "deploy": "cdk deploy",
+    "register": "sh ./bin/register.sh"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.124",
@@ -25,6 +27,7 @@
   "dependencies": {
     "aws-cdk-lib": "2.76.0",
     "constructs": "^10.0.0",
+    "simple-oauth2": "^5.0.0",
     "source-map-support": "^0.5.21"
   }
 }
